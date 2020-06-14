@@ -21,7 +21,7 @@ class Serv(BaseHTTPRequestHandler):
         #convert to byte using utf-8 so it can be displayed on screen 
         self.wfile.write(bytes(file_to_open, 'utf-8'))
 
-httpd = HTTPServer(('localhost', 8080), Serv)
+httpd = HTTPServer(('localhost', 7200), Serv)
 httpd.serve_forever()
 
  
