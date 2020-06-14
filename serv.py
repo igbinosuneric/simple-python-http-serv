@@ -6,7 +6,7 @@ class Serv(BaseHTTPRequestHandler):
     
     #calling the do get method which is built into the class 
     def do_GET(self):
-        #the above methods run everything we revice a get request 
+        #the above methods run everytime we revice a get request 
         if self.path == '/':
             #we check if its a forward slash
             self.path = '/index.html'
